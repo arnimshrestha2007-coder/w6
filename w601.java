@@ -1,33 +1,28 @@
+public class w601 {
+    public static void main(String[] args) {
 
-/**
- * Write a description of class w601 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class w601
-{
-    // instance variables - replace the example below with your own
-    private int x;
+        // declaring and constructing array
+        int[] age = new int[5];
+        System.out.println(age.length);  // length of array
 
-    /**
-     * Constructor for objects of class w601
-     */
-    public w601()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+        // initialization
+        age[0] = 10;
+        age[1] = 20;
+        age[2] = 30;
+        age[3] = 40;
+        age[4] = 50;
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        int firstelement = age[0];
+        System.out.println(firstelement);
+
+        // another array using direct initialization
+        int[] agr = {5, 10, 15, 20, 30};
+
+        int end = agr.length - 1;
+
+        // display in the SAME LINE
+        for (int i = 0; i <= end; i++) {
+            System.out.print(agr[i] + " ");
+        }
     }
 }
